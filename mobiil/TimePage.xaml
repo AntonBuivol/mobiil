@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobiil.TimePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                x:Name="Tagasi_btn"
+                Text="Tagasi lehele"
+                FontSize="Medium"
+                Clicked="Tagasi_btn_Clicked"
+                BackgroundColor="Black"
+                TextColor="White">
+                
+            </Button>
+            
+            <Label
+                x:Name="lbl"
+                Text="Muuda teema!"
+                VerticalOptions="End" 
+                HorizontalOptions="End"
+                BackgroundColor="Black"
+                TextColor="White"
+                FontSize="Subtitle">
+
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Button
+                x:Name="Time_run"
+                Text="Näita kellaaeg"
+                FontSize="Medium"
+                Clicked="Time_run_Clicked"
+                BackgroundColor="Black"
+                TextColor="White">
+                
+            </Button>
+            <Label
+                x:Name="lbl_time"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Black"
+                TextColor="White">
+                
+            </Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
